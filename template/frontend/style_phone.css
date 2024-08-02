@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+/ CSS PHONE
+/	CSS Document
+/	CSS MEDIA SCREEN
+*/
+
+/*
+forced reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+*/
+
+/*TYPOGRAPHY*/
+h1,h3,h5,h6                                                  { font-family: jk_aboderegular_demo, Arial, Helvetica, sans-serif;}
+h2,h4                                                        { font-family: print_clearlyregular, Arial, Helvetica, sans-serif;}
+b                                                            { font-family: print_clearlyregular, Arial, Helvetica, sans-serif; }
+p,strong,i,blockquote,a,li,td,tl,dt,dl,dd,div,span,form,input{ font-family: print_clearlyregular, Arial, Helvetica, sans-serif; }
+
+h1                                                           { color:#333;    font-size:58px; font-weight:50; line-height:69px; word-spacing:7px; letter-spacing:1px; padding:0 0; margin:0 0; text-align:left; }
+h2                                                           { color:#333;    font-size:32px; font-weight:50; line-height:32px; word-spacing:7px; letter-spacing:1px; padding:0 0; margin:0 0; text-align:left; }
+h3                                                           { color:#333;    font-size:58px; font-weight:50; line-height:69px; word-spacing:7px; letter-spacing:1px; padding:0 0; margin:0 0; text-align:left; }
+h4                                                           { color:#000;    font-size:15px; font-weight:50; line-height:21px; word-spacing:7px; letter-spacing:1px; padding:0 0; margin:0 0; text-align:left; }
+h5                                                           { color:#333;    font-size:15px; font-weight:50; line-height:19px; word-spacing:7px; letter-spacing:1px; padding:0 0; margin:0 0; text-align:left; }
+h6                                                           { color:#333;    font-size:11px; font-weight:50; line-height:15px; word-spacing:7px; letter-spacing:1px; padding:0 0; margin:0 0; text-align:left; }
+
+p                                                            { color:#333;    font-size:21px; font-weight:50; line-height:24px; word-spacing:4px; letter-spacing:1px; padding:20px 0 20px 0; margin:0 0; text-align:justify; display:block; }
+b                                                            { color:#333;    font-size:15px; font-weight:50; line-height:24px; word-spacing:4px; letter-spacing:1px; padding:0 0; margin:0 0; }
+strong                                                       { color:#333;    font-size:21px; font-weight:50; line-height:24px; word-spacing:4px; letter-spacing:1px; padding:0 0; margin:0 0; }
+i                                                            { color:#333;    font-size:21px; font-weight:50; line-height:24px; word-spacing:4px; letter-spacing:1px; padding:0 0; margin:0 0; }
+blockquote                                                   { color:#333;    font-size:21px; font-weight:50; line-height:24px; word-spacing:4px; letter-spacing:1px; padding:20px 50px 20px 50px; margin:0 0; text-align:justify; border:dotted 1px #CCC; background-image:url(media/image/bq-left.png),url(media/image/bq-right.png); background-position:left top,right bottom; background-repeat:no-repeat; }
+
+a                                                            { color:#000;    font-size:18px; border:dotted 1px #29abe2; padding:0 4px 0 4px; text-decoration:none; }
+a:hover                                                      { color:#29abe2; font-size:18px; border:dotted 1px #29abe2; padding:0 4px 0 4px; text-decoration:none; }
+a:active                                                     { color:#0CF;    font-size:18px; border:dotted 1px #29abe2; padding:0 4px 0 4px; text-decoration:none; }
+
+hr                                                           { height:0px; border:0px solid; border-bottom:1px solid #E6E6E6 !important; margin:;}
+
+ul                                                           { list-style:inherit; padding:0; margin:0; color:; display:block; }
+ul li                                                        { list-style:inherit; color:; display:block; }
+ul ul li                                                     { list-style:inherit; color:; display:block;}
+
+img                                                          { border:0px !important;}
+
+/*SCREEN*/
+html{
+ width: 		                            100%                !important;
+ height:                           			100%                !important;
+ min-width:                             100%                !important;
+ min-height:                            100%                !important;
+ padding:                               0px 0px 0px 0px     !important;
+ margin:                                0px 0px 0px 0px     !important;
+ border:										      			0;
+ text-align:                            center              !important;
+ background:								      			#FFF;
+ background-size:						      			cover;
+ backface-visibility:                   hidden;
+ -moz-backface-visibility:              hidden;
+ -o-backface-visibility:                hidden;
+ -webkit-backface-visibility:           hidden;
+ -ms-backface-visibility:               hidden;
+ z-index:										      			1;
+}
+body{
+ height:                           			auto                !important;
+ min-width:                             100%                !important;
+ min-height:                            100%                !important;
+ padding:                               0px 0px 0px 0px			!important;
+ margin:                                0px auto 0px auto   !important;
+ border:								  		    			0;
+ text-align:                            center              !important;
+ background:						  		    			#FFF								!important;
+ display:								  		    			block;
+ box-sizing:                            border-box          !important;
+ -moz-box-sizing:                       border-box          !important;
+ -ms-box-sizing:                        border-box          !important;
+ -o-box-sizing:                         border-box          !important;
+ -webkit-box-sizing:                    border-box          !important;
+ backface-visibility:                   hidden;
+ -moz-backface-visibility:              hidden;
+ -o-backface-visibility:                hidden;
+ -webkit-backface-visibility:           hidden;
+ -ms-backface-visibility:               hidden;
+ z-index:												      	2;
+}
+*{
+ outline:                               none 0px            !important; 
+}
+.none{
+ height:0px !important; width:0px !important; overflow:hidden !important; border:none !important; padding:0px 0px 0px 0px !important; margin:0px 0px 0px 0px !important;
+}
+
+/*LAYOUT*/
+
+	/*box sizing*/
+	.boxtype-full,.boxtype-centred,.boxtype-leftside,.boxtype-leftbox,.boxtype-centerbox,.boxtype-rightbox,.boxtype-rightside {
+	 box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; -webkit-box-sizing: border-box; overflow: hidden;
+  }
+
+
+	/*structural box*/
+  .boxtype-full                        { width:100%; height:100%; padding:0% 0% 0% 0%; }
+  .boxtype-centred                     { width:80%; max-width:1010px; height:100%; margin:0% auto 0% auto; }
+
+  .boxtype-leftside                    { width:20%; height:100%; margin:0% 0% 0% 0%;  padding:0px 30px 0px 0px; float:left; }
+ 	.boxtype-leftbox                     { width:80%; height:100%; margin:0% 0% 0% 20%; padding:0px 0px 0px 30px; border-left:1px solid #e1e1e1; }
+  .boxtype-centerbox                   { width:60%; height:100%; margin:0% 0% 0% 0%;  padding:0px 0px 0px 0px; float:left; }
+  .boxtype-rightbox                    { width:80%; height:100%; margin:0% 0% 0% 0%;  padding:0px 0px 0px 0px; float:left; border-right:1px solid #e1e1e1;}
+ 	.boxtype-rightside                   { width:20%; height:100%; margin:0% 0% 0% 0%;  padding:0px 0px 0px 15px; float:right;  }
+
+  .boxtype-clear                       { width: 100%; height:0 !important; margin: 0px 0px 0px 0px !important; padding:0px 0px 0px 0px !important; display:block !important; clear:both !important; }
+
+
+  /*Altri box*/

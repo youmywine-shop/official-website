@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/*
+/	CSS Document
+/	CSS MEDIA SCREEN
+/	Created by Alberto Marà
+/	www.am-photograficaedesign.com
+/	contatto@am-photograficaedesign.com
+*/
+
+
+ /*general & button*/
+ .table-input{
+ padding:                                                    9px 9px 9px 9px;
+
+ box-shadow:                                                 0 0 4px #FFFFFF inset, 0px 2px 6px #CCC;
+ -moz-box-shadow:                                            0 0 4px #FFFFFF inset, 0px 2px 6px #CCC;
+ -ms-box-shadow:                                             0 0 4px #FFFFFF inset, 0px 2px 6px #CCC;
+ -o-box-shadow:                                              0 0 4px #FFFFFF inset, 0px 2px 6px #CCC;
+ -webkit-box-shadow:                                         0 0 4px #FFFFFF inset, 0px 2px 6px #CCC;
+
+ border:                                                     1px solid #ccc;
+ border-radius:                                              3px !important;
+ -webkit-border-radius:                                      3px !important;
+ -moz-border-radius:                                         3px !important;
+ -ms-border-radius:                                          3px !important;
+ -o-border-radius:                                           3px !important;
+
+ background:                                                 url(media/image/bkg-0.png) top center repeat-x;
+ background:                                                 -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+ background:                                                 -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+ background:                                                 -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+ background:                                                 -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+ background:                                                 -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+ background:                                                 linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+ filter:                                                     progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+ }
+
+ button,input,.wrap_checkbox,.wrap_radio,textarea,.wrap_inputfile,.inputfile-upload,.QapTcha,.bgSlider,.wrap_rangeamount,.wrap_quantity{
+ box-sizing:                  border-box;
+ -moz-box-sizing:             border-box;
+ -webkit-box-sizing:          border-box;
+ -o-box-sizing:               border-box;
+ -ms-box-sizing:              border-box;
+ width:                       100%; 
+ padding:                     9px 0 9px 0;
+ margin:                      5px auto 5px auto;
+
+ line-height:                 1;
+ font:                        15px "new_ciclefina", helvetica, arial, sans-serif;
+ color:                       #333;
+ text-align:                  left !important;
+
+ border:                      1px solid #ccc;
+ border-radius:               3px !important;
+ -webkit-border-radius:       3px !important;
+ -moz-border-radius:          3px !important;
+ -ms-border-radius:           3px !important;
+ -o-border-radius:            3px !important;
+
+ background: #ededed;
+ background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 47%, #efefef 89%, #ededed 99%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(47%,#ffffff), color-stop(89%,#efefef), color-stop(99%,#ededed));
+ background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -o-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: linear-gradient(to bottom,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+ }
+
+ button:hover,input:hover,.wrap_checkbox:hover,.wrap_radio:hover,.inputfile-upload:hover{
+ border:     1px solid #000;
+ background: #ededed;
+ background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 47%, #efefef 89%, #ededed 99%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(47%,#ffffff), color-stop(89%,#efefef), color-stop(99%,#ededed));
+ background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -o-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: linear-gradient(to bottom,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+ }
+ button:active,.inputfile-upload:active {
+ color: 	#FFF; 
+ margin:    5px auto 5px auto;
+
+ background: #ededed;
+ background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 47%, #efefef 89%, #ededed 99%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(47%,#ffffff), color-stop(89%,#efefef), color-stop(99%,#ededed));
+ background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -o-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: linear-gradient(to bottom,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+ }
+
+ button,input                 { text-align:center !important;}
+ input[disabled],button[disabled],input[disabled]:hover,button[disabled]:hover,
+ input[disabled]:active,button[disabled]:active{
+ color: 		 		 	#C30;
+ margin:                      5px auto 5px auto;
+
+ background: #ededed;
+ background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 47%, #efefef 89%, #ededed 99%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(47%,#ffffff), color-stop(89%,#efefef), color-stop(99%,#ededed));
+ background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -o-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: linear-gradient(to bottom,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+ }
+
+
+
+ /*textarea box*/
+ textarea         { text-align:justify !important; padding:40px 40px 40px 40px; display: block; margin:20px 0 20px 0;}
+ textarea         { font-size:15px; font-family: "new_ciclefina", Arial, Helvetica, sans-serif; color:#333; }
+
+ /*input file*/
+ .wrap_inputfile              { padding:0px; border: 0px; background:none !important;}
+ .wrap_inputfile input        { padding:7px 7px 7px 7px; text-align:left !important;}
+
+ /*input box*/
+ input[type=text],input[type=password],input[type=email]{
+ padding-left:5px !important;
+ text-align:left !important;
+ }	
+ input[type=submit]:active, input[type=reset]:active{ margin: 8px 0 2px 0; }
+
+ /*label box*/
+ label {
+ display:                     block;
+ text-align:                  left !important;
+ padding:                     20px 5px 5px 5px;
+ outline:                     none !important;
+ line-height:                 1;
+ font:                        11px "new_ciclefina", helvetica, arial, sans-serif;
+
+ line-height:                 1;
+ font:                        15px "new_ciclefina", helvetica, arial, sans-serif;
+ color:                       #333;
+ }
+
+ /*check box*/
+ .wrap_checkbox label{  padding: 0px 0px 0px 10px;}
+ .el-hide {
+ width:                              64px;
+ height:                             24px;
+ }
+ .checkbox {
+ width:                              64px;
+ height:                             25px;
+ margin:                             -21px 5px 0 0;
+ padding:                            0 0 0 0 !important;
+
+ border-radius:                      6px !important;
+ -webkit-border-radius:              6px !important;
+ -moz-border-radius:                 6px !important;
+ -ms-border-radius:                  6px !important;
+ -o-border-radius:                   6px !important;
+
+ box-shadow:                         #000 0 0 4px inset, #333 0 0 2px inset, 0 0 2px #ccc;
+ background:                         url(../images/switch_check.jpg) no-repeat;
+ background-position:                -1px 0;
+
+ -moz-opacity: 0.50;
+ -ms-opacity: 0.50;
+ -o-opacity: 0.50;
+ opacity: 0.50;
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+ }
+ .checked                          {
+ background-position:                -32px 0;
+ -moz-opacity: 1;
+ -ms-opacity: 1;
+ -o-opacity: 1;
+ opacity: 1;
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+ }
+ /*radio box*/
+ .wrap_radio label{  padding: 0px 0px 0px 10px;}
+ .radio {
+ width:                              64px;
+ height:                             25px;
+ margin:                             -21px 5px 0 10px;
+
+ border-radius:                      6px !important;
+ -webkit-border-radius:              6px !important;
+ -moz-border-radius:                 6px !important;
+ -ms-border-radius:                  6px !important;
+ -o-border-radius:                   6px !important;
+
+ box-shadow:                         #000 0 0 4px inset, #333 0 0 2px inset, 0 0 2px #ccc;
+ background:                         url(../images/switch_radio.jpg) no-repeat;
+ background-position:                -1px 0;
+
+ -moz-opacity: 0.50;
+ -ms-opacity: 0.50;
+ -o-opacity: 0.50;
+ opacity: 0.50;
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=50);
+ }
+ .selected                          {
+ background-position:                -32px 0;
+ -moz-opacity: 1;
+ -ms-opacity: 1;
+ -o-opacity: 1;
+ opacity: 1;
+ -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=100);
+ }
+ 
+ .select{
+ width: 100%;
+ padding: 5px 5px 5px 5px;
+
+ border:                      1px solid #ccc;
+ border-radius:               3px !important;
+ -webkit-border-radius:       3px !important;
+ -moz-border-radius:          3px !important;
+ -ms-border-radius:           3px !important;
+ -o-border-radius:            3px !important;
+
+ background: #ededed;
+ background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 47%, #efefef 89%, #ededed 99%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(47%,#ffffff), color-stop(89%,#efefef), color-stop(99%,#ededed));
+ background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -o-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ background: linear-gradient(to bottom,  #ededed 0%,#ffffff 47%,#efefef 89%,#ededed 99%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+ }
+
+ /*date & time*/
+ .date {
+ background: #fff url(../../../media/image/bkg-teaxtarea.png) left center repeat-x !important
+ }

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*
+/	CSS Document
+/	CSS MEDIA SCREEN
+/	Created by Alberto Marà
+/	www.am-photograficaedesign.com
+/	contatto@am-photograficaedesign.com
+*/
+
+/*TYPOGRAPHY*/
+h1,h2,h3,h4,h5	{ font-family:;}
+h1 												{ color:; font-size:; font-weight:; line-height:; word-spacing:; letter-spacing:; padding:; margin:; text-align:; }
+h2 												{ color:; font-size:; font-weight:; line-height:; word-spacing:; letter-spacing:; padding:; margin:; text-align:; }
+h3 												{ color:; font-size:; font-weight:; line-height:; word-spacing:; letter-spacing:; padding:; margin:; text-align:; }
+h4 												{ color:; font-size:; font-weight:; line-height:; word-spacing:; letter-spacing:; padding:; margin:; text-align:; }
+h5 												{ color:; font-size:; font-weight:; line-height:; word-spacing:; letter-spacing:; padding:; margin:; text-align:; }
+p,span 								{ color:; font-size:; font-weight:; line-height:; word-spacing:;	letter-spacing:; padding:; margin:; text-align:; }
+
+p,span,blockquote,strong,b,i,a,li,td,tl,dt,dl,dd 	{
+ font-family:;
+ font-weight:;
+ line-height:;
+}
+b{
+ font-weight: 	700;
+}
+strong{
+ font-weight:			;
+}
+
+a 													{ text-decoration:none; color:; cursor: url(), auto; }
+a:hover 							{ text-decoration:none; color:; }
+a:active 						{ text-decoration:none; color:; }
+
+hr 												{ height:0px; border:0px solid; border-bottom:1px solid #??? !important; margin:;}
+
+ul li 									{ list-style:; color:; }
+ul ul li 						{ list-style:; color:; }
+
+img 											{ border:0px !important;}
+
+/*SCREEN RESET*/
+html{
+ width: 						100%;
+ height: 					100%;
+ padding:					0 0 				!important;
+ margin:						0 0 				!important;
+ text-align:		center 	!important;	background:;
+}
+body{
+ width: 						100%;
+ min-height:		100%;
+ height:						auto;
+ padding:					0 0 				!important;
+ margin:						0 0 				!important;	background:;
+ text-align:		left;
+}
+
+/*LAYOUT*/

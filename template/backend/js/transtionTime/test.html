@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>CSS EASING SET</title>
+		<link rel="stylesheet" href="transtiontime.css" type="text/css" media="screen" />
+
+	</head>
+
+	<body>
+
+		<style>
+  		h1,h2,h3{ color:#FFF; font-family:Arial, Helvetica, sans-serif; text-shadow: 0 2px 2px #999999; }
+  		p,span,blockquote,strong,b,i,li,td,tl,dt,dl,dd 	{
+     font-family:Arial, Helvetica, sans-serif;
+     font-weight:500;
+     line-height:10px;
+     color:#484848;
+     text-shadow:0 1px 1px #FFF;
+    }
+    a															{ color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:20px; }
+    a:hover									{ color:#000 !important; }
+    hr 													{ height:0px; border:0px solid; border-bottom:1px solid #484848 !important; margin:;}
+    img 												{ border:0px !important;}
+    html,body							{ margin:0 0 !important; padding:0 0 !important; width:100%; height:100%; }
+  		body												{ background:#CCC; }
+    #content								{ margin:0 auto !important; width:1004px; height:100%; }
+    .cagetest							{	width:1000px; height:40px; background:#0C3; clear:both; margin:15px 0 15px 0; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; overflow:hidden; border: 2px solid #999; }
+    .testfade							{ padding:10px 10px 10px 10px; width:265px; height:20px; background:#333; color:#CCC; float:left;  font-family:Arial, Helvetica, sans-serif; }
+    .testfade:hover a{color:#CCC;}
+    .testfade:hover	{ background:#FFF;}
+    .cagemove							{ width:715px; height:40px; float:left; 
+                      background: #4c4c4c;
+                      background: -moz-radial-gradient(center, ellipse cover,  #4c4c4c 0%, #eaeaea 100%);
+                      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4c4c4c), color-stop(100%,#eaeaea));
+                      background: -webkit-radial-gradient(center, ellipse cover,  #4c4c4c 0%,#eaeaea 100%);
+                      background: -o-radial-gradient(center, ellipse cover,  #4c4c4c 0%,#eaeaea 100%);
+                      background: -ms-radial-gradient(center, ellipse cover,  #4c4c4c 0%,#eaeaea 100%);
+                      background: radial-gradient(ellipse at center,  #4c4c4c 0%,#eaeaea 100%);
+                      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#eaeaea',GradientType=1 );
+																				}
+    .grabme									{	background:top url(play.png) no-repeat,#000; float:left,; padding:10px 10px 10px 10px; width:40px; height:20px; color:#CCC !important; font-family:Arial, Helvetica, sans-serif; cursor:pointer; box-shadow: 0 0 10px #000000; position:relative; z-index:900 !important; }
+    .grabme:hover			{ background:bottom url(play.png) no-repeat,#000; }
+    .grabme:active		{ background:bottom url(replay.png) no-repeat,#000;}
+    .testmove							{ position:relative; z-index:500 !important; margin-left:50px; margin-top:-10px; padding:10px 10px 10px 10px; width:100px; height:14px; background:#333; border: 3px solid #000; overflow:hidden; box-shadow: 0 0 10px #000000;}
+    .grabme:active .testmove {	margin-left:579px;  }
+		</style>
+
+		<div id="content">
+
+				<h1>CSS TRANSITION TIME SET</h1>
+				<h3 style="margin-top:-22px;">Test page for selection</h3>
+
+				<br /><hr />
+				<i>
+				<p>&nbsp;[1] incorpora la libreria nel sito  &raquo; &lt;link rel="stylesheet" href="tt_.css" type="text/css" media="screen" /&gt;</p><p>
+				</p><p>&nbsp;[2] scegli uno dei timer d'animazione e copia il suo nome &raquo; Ad esempio tt_easeCirc</p>
+				<p>&nbsp;[3] Incorpora il nome in una classe, solo o in altre classi &raquo; &lt;a href="#" style="<b>tt_easeCirc</b> &nbsp;altreClassi..." &gt;miolink&lt;/a&gt;</p>
+				<hr />
+				<p>
+						motod jquery:<br /><br />
+						insert this script into the &lt;head&gt; of page<br /><br /><br />
+						&lt;!--TransitionTime--&gt;<br /><br />
+						&lt;script type="text/javascript"&gt;<br /><br />
+						&nbsp;&nbsp;&nbsp;$(document).ready(function(){<br /><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("MY TARGHET").addClass("TRANSITION SELECTED");<br /><br />
+						&nbsp&nbsp;&nbsp;;});<br /><br />
+						&lt;/script&gt;<br /><br />
+				</p>
+				</i>
+				<hr /><br />
+
+				<p>/*NORMAL TIME*//*Nomal for web parts and movement*/</p>
+				<div class="cagetest">
+					<div class="tt_easeCirc testfade"><a class="tt_easeCirc">tt_easeCirc</a></div><div class="cagemove"><div class="tt_easeCirc grabme"><div class="tt_easeCirc testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_easeQuint testfade"><a class="tt_easeQuint">tt_easeQuint</a></div><div class="cagemove"><div class="tt_easeQuint grabme"><div class="tt_easeQuint testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_easeExpo testfade"><a class="tt_easeExpo">tt_easeExpo</a></div><div class="cagemove"><div class="tt_easeExpo grabme"><div class="tt_easeExpo testmove"></div></div></div>
+				</div>
+
+				<br />
+				<p>/*CLASSIC TIME*//*Optimal for web, game and button and mach parts and movement*/</p>
+				<p>fast to...</p>
+				<div class="cagetest">
+					<div class="tt_classic_fastIn_fastOut testfade"><a class="tt_classic_fastIn_fastOut">tt_classic_fastIn_fastOut</a></div><div class="cagemove"><div class="tt_classic_fastIn_fastOut grabme"><div class="tt_classic_fastIn_fastOut testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_classic_fastIn_mediumOut testfade"><a class="tt_classic_fastIn_mediumOut">tt_classic_fastIn_mediumOut</a></div><div class="cagemove"><div class="tt_classic_fastIn_mediumOut grabme"><div class="tt_classic_fastIn_mediumOut testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_classic_fastIn_slowOut testfade"><a class="tt_classic_fastIn_slowOut">tt_classic_fastIn_slowOut</a></div><div class="cagemove"><div class="tt_classic_fastIn_slowOut grabme"><div class="tt_classic_fastIn_slowOut testmove"></div></div></div>
+				</div>
+				
+				<p>medium to...</p>
+				<div class="cagetest">
+					<div class="tt_classic_mediumIn_fastOut testfade"><a class="tt_classic_mediumIn_fastOut">tt_classic_mediumIn_fastOut</a></div><div class="cagemove"><div class="tt_classic_mediumIn_fastOut grabme"><div class="tt_classic_mediumIn_fastOut testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_classic_mediumIn_normalOut testfade"><a class="tt_classic_mediumIn_normalOut">tt_classic_mediumIn_normalOut</a></div><div class="cagemove"><div class="tt_classic_mediumIn_normalOut grabme"><div class="tt_classic_mediumIn_normalOut testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_classic_mediumIn_slowOut testfade"><a class="tt_classic_mediumIn_slowOut">tt_classic_mediumIn_slowOut</a></div><div class="cagemove"><div class="tt_classic_mediumIn_slowOut grabme"><div class="tt_classic_mediumIn_slowOut testmove"></div></div></div>
+				</div>
+
+				<p>slow to...</p>
+				<div class="cagetest">
+					<div class="tt_classic_slowIn_fastOut testfade"><a class="tt_classic_slowIn_fastOut">tt_classic_slowIn_fastOutt</a></div><div class="cagemove"><div class="tt_classic_slowIn_fastOut grabme"><div class="tt_classic_slowIn_fastOut testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_classic_slowIn_mediumOut testfade"><a class="tt_classic_slowIn_mediumOut">tt_classic_slowIn_mediumOut</a></div><div class="cagemove"><div class="tt_classic_slowIn_mediumOut grabme"><div class="tt_classic_slowIn_mediumOut testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_classic_slowIn_slowOut testfade"><a class="tt_classic_slowIn_slowOut">tt_classic_slowIn_slowOut</a></div><div class="cagemove"><div class="tt_classic_slowIn_slowOut grabme"><div class="tt_classic_slowIn_slowOut testmove"></div></div></div>
+				</div>
+
+			<br />
+			<p>/*BOUNCED TIME*//*Particular for web parts. Optimal for button and game parts movement*/</p>
+			<div class="cagetest">
+					<div class="tt_bounced_funny testfade"><a class="tt_bounced_funny">tt_bounced_funny</a></div><div class="cagemove"><div class="tt_bounced_funny grabme"><div class="tt_bounced_funny testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_bounced_elastic testfade"><a class="tt_bounced_elastic">tt_bounced_elastic</a></div><div class="cagemove"><div class="tt_bounced_elastic grabme"><div class="tt_bounced_elastic testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_bounced_magnetic testfade"><a class="tt_bounced_magnetic">tt_bounced_magnetic</a></div><div class="cagemove"><div class="tt_bounced_magnetic grabme"><div class="tt_bounced_magnetic testmove"></div></div></div>
+				</div>
+				<div class="cagetest">
+					<div class="tt_bouced_gravity testfade"><a class="tt_bouced_gravity">tt_bouced_gravity</a></div><div class="cagemove"><div class="tt_bouced_gravity grabme"><div class="tt_bouced_gravity testmove"></div></div></div>
+				</div>
+
+				<br /><hr /><br />
+
+		</div>
+
+	</body>
+
+</html>

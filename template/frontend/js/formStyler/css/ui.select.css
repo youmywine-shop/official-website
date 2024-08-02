@@ -1,0 +1,209 @@
+
+
+ @charset "utf-8";
+
+ /*/
+ /+/ Created by Alberto Marà
+ /+/ contatto@am-photograficaedesign.com
+ /+/ UI GRAPHICS SELECT
+ /+/ 
+ /+/ JQUERY MINIMALECT
+ /+/ http://groenroos.github.io/minimalect/
+ /+/ 
+ /*/
+
+
+
+ /*/SELECTBOX SETTING - INPUT /*/
+ .minict_wrapper {
+
+ position:                           relative;
+
+ width:                              100%;
+ height:                             2.2rem;
+
+ border:                             1px solid #e5e5e5;
+ border-radius:                      3px;
+
+ background:                         #fff;
+
+ }
+
+
+
+ /*/SELECTBOX SETTING - ARROW /*/
+ .minict_wrapper:after {
+
+ content:                            "\25BC";
+
+ display:                            block;
+ position:                           absolute;
+
+ height:                             2.2rem;
+ width:                              2.2rem;
+ top:                                0;
+ right:                              0;
+
+ font-size:                          0.8rem;
+ line-height:                        2.05rem;
+ text-align:                         center;
+ color:                              #555;
+
+ }
+ .minict_wrapper.active:after {      content: "\25B2"; }
+
+
+
+ /*/SELECTBOX SETTING - OPTION GROUP /*/
+ .minict_wrapper ul {
+ display:                            none;
+ position:                           absolute;
+
+ width:                              100%;
+ max-height:                         22rem;
+ padding:                            0 !important;
+
+ margin:                             0;
+ left:                               0;
+
+ border:                             1px solid #e5e5e5;
+ -webkit-border-radius:              3px;
+ -moz-border-radius:                 3px;
+ border-radius:                      3px;
+
+ background-color:                   #F3F3F3;
+
+ list-style:                         none;
+
+ overflow-y:                         auto;
+ z-index:                            999999;
+ }
+
+
+
+ /*/SELECTBOX SETTING - OPTION /*/
+ .minict_wrapper ul li {
+
+ padding:                            0 0.7rem;
+ height:                             2.2rem;
+
+ background:                         #fff;
+
+ line-height:                        2rem;
+ list-style:                         none;
+ font-size:                          1rem;
+
+ cursor:                             pointer;
+
+ }
+ .minict_wrapper ul li:hover {
+ background:                         #F3F3F3;
+ color:                              #111;
+ }
+
+
+
+ /*/SELECTBOX SETTING - OPTION GROUP/*/
+ .minict_wrapper ul li.minict_group::before{
+ content:"» ";
+ font-size: 20px;
+ }
+ .minict_wrapper ul li.minict_group {
+
+ box-shadow:                         inset 0px 2px 5px #DBDBDB;
+ -webkit-box-shadow:                 inset 0px 2px 5px #DBDBDB;
+ -moz-box-shadow:                    inset 0px 2px 5px #DBDBDB;
+
+ background-color:                   #F3F3F3;
+ background-repeat:                  repeat-x;
+ background-position:                top;
+
+ color:                              #666 !important;
+ font-weight:                        bold;
+ cursor:                             default;
+
+ }
+ .minict_wrapper ul li.minict_empty {
+
+ display:                            none;
+ height:                             3.5rem;
+
+ background:                         #fff !important;
+
+ text-align:                         center;
+ line-height:                        3.3rem;
+ font-size:                          0.9rem;
+ color:                              #bbb;
+
+ }
+ .minict_wrapper ul li.selected {
+ color:                              #819a9a;
+ background:                         #f9fcff;
+ }
+ .minict_wrapper ul li.highlighted {
+ color:                              #fff;
+ background:                         #819a9a;
+ }
+ .minict_wrapper ul li.hidden {
+ display:                            none;
+ }
+
+
+
+ /*/SELECTBOX SETTING - ?????/*/
+ .minict_wrapper.bubble {
+ -webkit-box-shadow:                 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+ box-shadow:                         0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+ background:                         -moz-linear-gradient(top, white 0%, #f9f9f9 100%);
+ background:                         -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f9f9f9));
+ background:                         -webkit-linear-gradient(top, white 0%, #f9f9f9 100%);
+ background:                         -o-linear-gradient(top, white 0%, #f9f9f9 100%);
+ background:                         -ms-linear-gradient(top, white 0%, #f9f9f9 100%);
+ background:                         linear-gradient(to bottom, white 0%, #f9f9f9 100%); }
+ .minict_wrapper.bubble:hover {      border-color: #dcdcdc; }
+ .minict_wrapper.bubble:after {
+ border-left:                        1px solid #e5e5e5;
+ -webkit-box-shadow:                 inset 1px 0px 0px 0px #fff;
+ box-shadow:                         inset 1px 0px 0px 0px #fff;
+ height:                             2.05rem;
+ }
+ .minict_wrapper.bubble ul {
+ top:                                2.7rem;
+ -webkit-box-shadow:                 0px 5px 25px 0px rgba(0, 0, 0, 0.25);
+ box-shadow:                         0px 5px 25px 0px rgba(0, 0, 0, 0.25);
+ border-radius:                      6px;
+ overflow:                           visible;
+ }
+ .minict_wrapper.bubble ul:before {
+ position:                            absolute;
+ top:                                 -11px;
+ left:                                19px;
+ content:                             ".";
+ color:                               transparent;
+ width:                               0px;
+ height:                              0px;
+ border-style:                        solid;
+ border-width:                        0 11px 11px 11px;
+ border-color:                        transparent transparent #e5e5e5 transparent;
+ }
+ .minict_wrapper.bubble ul:after {
+ position:                            absolute;
+ top:                                 -10px;
+ left:                                20px;
+ content:                             ".";
+ color:                               transparent;
+ width:                               0px;
+ height:                              0px;
+ border-style:                        solid;
+ border-width:                        0 10px 10px 10px;
+ border-color:                        transparent transparent #ffffff transparent;
+ }
+ .minict_wrapper.bubble ul li.minict_first {
+ border-top-left-radius:              6px;
+ border-top-right-radius:             6px;
+ }
+ .minict_wrapper.bubble ul li.minict_last {
+ border-bottom-left-radius:          6px;
+ border-bottom-right-radius:         6px;
+ }
+
